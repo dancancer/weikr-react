@@ -1,0 +1,14 @@
+@mixin flex-box{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+@mixin flex-space-between{
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+ }
+
+
