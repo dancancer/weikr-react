@@ -1,4 +1,4 @@
-[
+var Data = [
   {
     "created_at": "Thu Dec 31 12:10:09 +0800 2015",
     "id": 3926084745929990,
@@ -2613,4 +2613,6 @@
     "userType": 0,
     "cardid": "star_710"
   }
-]
+];
+
+module.exports = Data;

@@ -10,13 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "@ali/lib-mtop": "~2.0.6",
+    "@ali/rc-layeredmask-mixin": "~1.0.9",
     "classnames": "*",
-    "lie": "*",
-    "regenerator": "*",
     "co": "*",
-    "reflux": "*",
+    "lie": "*",
+    "moment": "^2.11.0",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "reflux": "*",
+    "regenerator": "*",
+    "xhttp": "0.0.9"
   },
   "devDependencies": {
     "autoprefixer": "~6.1.2",

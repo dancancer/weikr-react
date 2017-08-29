@@ -1,0 +1,20 @@
+{
+  "name": "WeiKr",
+  "version": "0.3.4",
+    "description": "手边微博",
+  "background": {
+      "page": "background.html"
+  },
+  "options_page": "option.html",
+  "content_security_policy": "script-src 'unsafe-inline' 'self' 'unsafe-eval' https://127.0.0.1:3001 https://www.google-analytics.com;object-src 'self'",
+  "permissions": [ "fontSettings","notifications", "contextMenus", "tabs", "webRequest","http://*/*", "https://*/*" ],
+  "browser_action": {
+      "default_icon": "icon_48.png",
+      "default_popup": "pop.html"
+  },
+  "icons": { "16": "icon_16.png",
+      "48": "icon_48.png",
+      "128": "icon_128.png" },
+  "manifest_version": 2,
+  "update_url": "https://clients2.google.com/service/update2/crx"
+}

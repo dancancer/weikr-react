@@ -9,7 +9,7 @@ var precss       = require('precss');
 
 module.exports = {
     entry: [
-        'webpack-dev-server/client?http://127.0.0.1:3000',
+        'webpack-dev-server/client?https://127.0.0.1:3001',
         'webpack/hot/only-dev-server',
         './src/js/app.jsx'
     ],

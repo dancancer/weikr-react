@@ -3,15 +3,23 @@
  */
 var React = require('react');
 
+var moment = require('moment');
 var ItemHeader = React.createClass({
+
     render(){
+        moment.locale('zh-CN');
         let data = this.props.data;
 
         return(
             <div className="item-header">
-                <div className="item-avatar">{data.user.avatar_hd}</div>
-                <div className="item-user">{data.user.name}</div>
-                <div className="item-info">{data.created_at}</div>
+                <div className="item-avatar"><img src={data.user.avatar_large}/></div>
+                <div className="item-content">
+                    <div className="item-user">{data.user.name}</div>
+                    <div className="item-info">
+                        {moment(data.created_at).fromNow()+"  "}
+                        来自<span dangerouslySetInnerHTML={{__html: data.source}}></span>
+                    </div>
+                </div>
             </div>
         )
     }
